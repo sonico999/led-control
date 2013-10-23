@@ -1,4 +1,5 @@
-var app = require('express')()
+var express = require('express')
+	, app = express()
 	, server = require('http').createServer(app)
   	, io = require('socket.io').listen(server)
 	, dgram = require('dgram');
@@ -6,9 +7,7 @@ var app = require('express')()
 var client = dgram.createSocket('udp4');
 var message = new Buffer("100 101 102");
 
-app.get('/', function(req, res) {
-   res.sendfile(__dirname + '/index.html');
-});
+app.use(express.static(__dirname + '/'));
 
 io.sockets.on('connection', function(socket) {
 	console.log("Server Connected");
