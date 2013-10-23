@@ -4,6 +4,8 @@ var express = require('express')
   	, io = require('socket.io').listen(server)
 	, dgram = require('dgram');
 
+server.listen(5000);
+
 var client = dgram.createSocket('udp4');
 var message = new Buffer("100 101 102");
 
@@ -17,4 +19,3 @@ io.sockets.on('connection', function(socket) {
 	});
 });
 
-server.listen(3000);
