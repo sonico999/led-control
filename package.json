@@ -1,8 +1,12 @@
-{
-  "name": "myapp",
-  "version": "0.0.1",
-  "engines": {
-    "node": "0.10.x",
-    "npm":  "1.2.x"
-  }
+{	
+	"name": "LEDControl",
+   	"description": "First attempt at mobile node.js and socket.io arduino control",
+   	"version": "0.0.1",
+   	"dependencies": {
+    		"express": "3.x"
+   	},
+	"engines": {
+		"node": "0.10.x",
+		"npm": "1.3.x"	
+	}
 }
