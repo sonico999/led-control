@@ -3,7 +3,8 @@
    	"description": "First attempt at mobile node.js and socket.io arduino control",
    	"version": "0.0.1",
    	"dependencies": {
-    		"express": "3.x"
+    		"express": "3.x",
+			"socket.io": "~0.9.6"
    	},
 	"engines": {
 		"node": "0.10.x",
